@@ -1,13 +1,15 @@
 package piscine
 
 func Atoi(s string) int {
-	sign := 1
-	i := 0
-	if s[i] == '-' {
-		sign = -1
-		i++
-	} else if s[i] == '+' {
-		i++
+	if len(s) == 0 {
+		return 0
 	}
-	return BasicAtoi2(s[i:]) * sign
+	switch s[0] {
+	case '-':
+		return BasicAtoi2(s[1:]) * -1
+	case '+':
+		return BasicAtoi2(s[1:])
+	default:
+		return BasicAtoi2(s)
+	}
 }
