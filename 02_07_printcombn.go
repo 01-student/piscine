@@ -23,7 +23,7 @@ func printComb1() {
 	}
 }
 
-func PrintCombn(n int) {
+func PrintCombN(n int) {
 	table := [9]int{0, 1, 2, 3, 4, 5, 6, 7, 8}
 	tmax := [9]int{}
 
