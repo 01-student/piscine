@@ -1,6 +1,6 @@
 package piscine
 
-func SortIntegerTable(table []int) {
+func SortIntegerTable(table []int) []int {
 	i := 1
 	for i < len(table) {
 		if table[i-1] > table[i] {
@@ -12,4 +12,5 @@ func SortIntegerTable(table []int) {
 			i++
 		}
 	}
+	return table
 }
