@@ -3,7 +3,7 @@ package main
 import "github.com/01-edu/z01"
 
 func main() {
-	r := 'b'
+	r := 'a'
 	for r <= 'z' {
 		z01.PrintRune(r)
 		r++
