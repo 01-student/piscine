@@ -79,7 +79,7 @@ func tryX(x int) {
 	}
 }
 
-func eightQueens() {
+func EightQueens() {
 	// try the first column
 	tryX(0)
 }
